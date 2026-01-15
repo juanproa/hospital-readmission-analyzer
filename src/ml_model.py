@@ -81,6 +81,7 @@ if __name__ == "__main__":
     
     # Load data
     df = pd.read_csv('data/analysis_dataset.csv')
+    print(len(df))
     
     # Prepare data
     X, y = prepare_data(df)
@@ -95,5 +96,5 @@ if __name__ == "__main__":
     feature_importance = show_feature_importance(model, X.columns)
     
     print("\n" + "="*60)
-    print("✓ Model complete!")
-    print(f"✓ Achieved {accuracy*100:.1f}% accuracy")
+    print("Model complete!")
+    print(f"Achieved {accuracy*100:.1f}% accuracy")
